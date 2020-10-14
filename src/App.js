@@ -5,6 +5,8 @@ import Ninjas2 from './DynamicData-props-ninja';
 import Ninjas3 from './ListOfNinja-props';
 import  StatelessComp from './statelessComp';
 import IfElseConditionalOutput from './IfElseConditionalOutput';
+import TernaryConditionalOutput from './TernaryConditionalOutput';
+
 class App extends Component {
   state = {
     ninjas : [
@@ -23,9 +25,11 @@ class App extends Component {
         <Ninjas2 name="niroshini2" age="22" belt="green"/>
         <Ninjas3 ninjas = { this.state.ninjas} />   
 
-        <StatelessComp ninjas={this.state.ninjas} /> */}
+        <StatelessComp ninjas={this.state.ninjas} /> 
 
-        <IfElseConditionalOutput  ninjas={this.state.ninjas} />
+        <IfElseConditionalOutput  ninjas={this.state.ninjas} /> */}
+
+        <TernaryConditionalOutput  ninjas={this.state.ninjas} />
          
       </div>
     )
