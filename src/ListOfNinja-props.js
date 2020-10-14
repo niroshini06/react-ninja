@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 class Ninjas3 extends Component {
+     
+
     render() {
         const { ninjas } = this.props;
         const ninjaList = ninjas.map( ninja => {
@@ -12,6 +14,12 @@ class Ninjas3 extends Component {
             </div>
             )
         })
+
+        return(
+            <div>
+                { ninjaList }
+            </div>
+        )
     }
 }
 
