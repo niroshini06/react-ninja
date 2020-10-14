@@ -2,8 +2,16 @@ import React, {Component} from 'react';
 import './App.css';
 import Ninjas from './Ninjas';
 import Ninjas2 from './DynamicData-props-ninja';
+import Ninjas3 from './ListOfNinja-props';
 
 class App extends Component {
+  state = {
+    ninjas : [
+      {name: 'test1', age: 20, belt: 'red', id:1},
+      {name: 'test2', age: 25, belt: 'blue', id:2},
+      {name: 'test3', age: 26, belt: 'green', id:3},
+    ]
+  }
   render() {
     return (
       <div>
@@ -12,7 +20,7 @@ class App extends Component {
         <Ninjas/>
         <Ninjas2 name="niroshini" age="30" belt="black"/>
         <Ninjas2 name="niroshini2" age="22" belt="green"/>
-
+        <Ninjas3 ninjas = { this.state.ninjas} />
       </div>
     )
   }

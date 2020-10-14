@@ -1,17 +1,21 @@
 import React, { Component } from 'react';
 
-class Ninjas2 extends Component {
-    render(props) {
-        console.log(this.props);
-        const { name, age, belt} = this.props; //destructuring
-        return(
-            <div>
-                <div>Name: {this.props.name}</div>
-                <div>Age: { age } </div>
-                <div>Belt: Black</div>
+class Ninjas3 extends Component {
+    render() {
+        const { ninjas } = this.props;
+        const ninjaList = ninjas.map( ninja => {
+            return (
+                <div>
+                <div>Name: { ninja.name}</div>
+                <div>Age: { ninja.age } </div>
+                <div>Belt: { ninja.belt }</div>
             </div>
-        )
+            )
+        })
+
+        
+
     }
 }
 
-export default Ninjas2;
+export default Ninjas3;
