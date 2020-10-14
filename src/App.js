@@ -4,7 +4,7 @@ import Ninjas from './Ninjas';
 import Ninjas2 from './DynamicData-props-ninja';
 import Ninjas3 from './ListOfNinja-props';
 import  StatelessComp from './statelessComp';
-
+import IfElseConditionalOutput from './IfElseConditionalOutput';
 class App extends Component {
   state = {
     ninjas : [
@@ -21,9 +21,11 @@ class App extends Component {
           {/* <Ninjas/>
         <Ninjas2 name="niroshini" age="30" belt="black"/>
         <Ninjas2 name="niroshini2" age="22" belt="green"/>
-        <Ninjas3 ninjas = { this.state.ninjas} />   */}
+        <Ninjas3 ninjas = { this.state.ninjas} />   
 
-        <StatelessComp ninjas={this.state.ninjas} />
+        <StatelessComp ninjas={this.state.ninjas} /> */}
+
+        <IfElseConditionalOutput  ninjas={this.state.ninjas} />
          
       </div>
     )

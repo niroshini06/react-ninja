@@ -1,9 +1,10 @@
 import React from 'react';
 
 
-const StatelessComp = ({ninjas}) =>  {
-
+const IfElseConditionalOutput = ({ninjas}) =>  {
+     
         const ninjaList = ninjas.map( ninja => {
+            if(ninja.age > 20) {
             return (
                 <div key = {ninja.id}>
                 <div>Name: { ninja.name}</div>
@@ -11,6 +12,9 @@ const StatelessComp = ({ninjas}) =>  {
                 <div>Belt: { ninja.belt }</div>
             </div>
             )
+            } else {
+                return null
+            }
         })
 
         return(
@@ -21,4 +25,4 @@ const StatelessComp = ({ninjas}) =>  {
     }
 
 
-export default StatelessComp;
+export default IfElseConditionalOutput;
