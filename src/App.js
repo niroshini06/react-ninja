@@ -6,6 +6,7 @@ import Ninjas3 from './ListOfNinja-props';
 import  StatelessComp from './statelessComp';
 import IfElseConditionalOutput from './IfElseConditionalOutput';
 import TernaryConditionalOutput from './TernaryConditionalOutput';
+import AddNinja from './AddNinja';
 
 class App extends Component {
   state = {
@@ -27,9 +28,11 @@ class App extends Component {
 
         <StatelessComp ninjas={this.state.ninjas} /> 
 
-        <IfElseConditionalOutput  ninjas={this.state.ninjas} /> */}
+        <IfElseConditionalOutput  ninjas={this.state.ninjas} /> 
 
-        <TernaryConditionalOutput  ninjas={this.state.ninjas} />
+        <TernaryConditionalOutput  ninjas={this.state.ninjas} /> */}
+
+        <AddNinja />
          
       </div>
     )
