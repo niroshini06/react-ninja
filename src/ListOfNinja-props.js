@@ -12,9 +12,6 @@ class Ninjas3 extends Component {
             </div>
             )
         })
-
-        
-
     }
 }
 
