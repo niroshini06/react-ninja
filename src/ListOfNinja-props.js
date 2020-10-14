@@ -7,7 +7,7 @@ class Ninjas3 extends Component {
         const { ninjas } = this.props;
         const ninjaList = ninjas.map( ninja => {
             return (
-                <div>
+                <div key = {ninja.id}>
                 <div>Name: { ninja.name}</div>
                 <div>Age: { ninja.age } </div>
                 <div>Belt: { ninja.belt }</div>
